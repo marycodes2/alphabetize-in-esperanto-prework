@@ -1,3 +1,20 @@
+array = ["mi amas vin", "bonan matenon", "pacon", "ĉu vi parolas esperanton"]
+
+esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
 def alphabetize(arr)
-  # code here
+  esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  esperanton_alphabet = esperanton_alphabet.split(",")
+  arr.sort_by {|word| esperanton_alphabet}
 end
+
+puts alphabetize(array)
+
+baseket.sort! { |a,b|
+  if a.calories == b.calories
+    a.name.downcase <=> b.name.downcase
+  else
+    # Reverse the result to sort highest first.
+    -(a.calories <=> b.calories)
+  end
+}
