@@ -7,6 +7,7 @@ def alphabetize(arr)
   #esperanton_alphabet = esperanton_alphabet.split(",")
   sorted_list = arr.sort_by do |word|
     word.split(' ').map do |letter|
+      puts letter
       esperanton_alphabet.index(letter)
     end
   end 
