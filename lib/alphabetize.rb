@@ -4,8 +4,8 @@ esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(arr)
   esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
-  sorted_list = arr.sort_by do |word|
-    word.split('').map do |letter|
+  sorted_list = arr.sort_by do |phrase|
+    phrase.split('').map do |letter|
       esperanton_alphabet.index(letter)
     end
   end 
