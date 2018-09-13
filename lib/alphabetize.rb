@@ -5,7 +5,7 @@ esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
   esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   esperanton_alphabet = esperanton_alphabet.split(",")
-  arr.sort_by(word) {|word|}
+  arr.sort_by(word)
 end
 
 puts alphabetize(array)
