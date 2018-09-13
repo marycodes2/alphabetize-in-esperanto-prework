@@ -10,11 +10,11 @@ end
 
 puts alphabetize(array)
 
-baseket.sort! { |a,b|
+'''baseket.sort! { |a,b|
   if a.calories == b.calories
     a.name.downcase <=> b.name.downcase
   else
     # Reverse the result to sort highest first.
     -(a.calories <=> b.calories)
   end
-}
+}'''
