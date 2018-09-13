@@ -10,7 +10,6 @@ def alphabetize(arr)
       esperanton_alphabet.index(letter)
     end
   end 
-end 
   return sorted_list
 end
 
