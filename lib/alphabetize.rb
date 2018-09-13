@@ -5,7 +5,7 @@ esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 def alphabetize(arr)
   esperanton_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   sorted_list = arr.sort_by do |word|
-    word.split('').map do |letter|
+    word.split('').each do |letter|
       esperanton_alphabet.index(letter)
     end
   end 
